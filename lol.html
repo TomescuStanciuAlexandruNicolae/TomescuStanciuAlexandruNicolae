@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<title>League of Legends</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FF0004;
+}
+	ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+	.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body bgcolor="gold">
+
+<ul>	<li style="float:right; margin-right: 10px "><h1 id="ceas" style="font-size:12px">
+		<script>
+			function afiseaza(){
+				thelement=document.getElementById("ceas");
+				var numezi=["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+				var numeluna=["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+				var Digital=new Date();
+				var zi=Digital.getDay();
+				var nrzi=Digital.getDate();
+				var luna=Digital.getMonth();
+				var an=Digital.getFullYear();
+				var hours=Digital.getHours();
+				var minutes=Digital.getMinutes();
+				var seconds=Digital.getSeconds();
+				var dn="PM";
+				if (hours<12) dn="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var ctime=numezi[zi]+" "+nrzi+" "+numeluna[luna]+" "+an+"<br />"+hours+":"+minutes+":"+seconds+" "+dn
+				thelement.innerHTML="<b style='font-size:14;color:white;'>"+ctime+"</b>";
+				setTimeout("afiseaza()",1000);
+			}
+			window.onload=afiseaza;
+			//-->
+</script></h1>	</li>
+	<li><a  href="hobby.html">Hobby-urile mele</a></li>
+  <li><a class="active" href="jv.html">Jocuri video</a></li>
+  <li><a href="anime.html">Anime</a></li><li>
+	<a href="airsoft.html">Airsoft</a></li>
+	<li><a href="surse.html">Surse</a></li>
+	
+</ul>
+
+<div style="padding:20px;margin-top:30px;">
+  <img class="center" src="media/lollogo.png" alt="League of Legends" title="LOL">
+<p> League of Legends (română Liga Legendelor) este un joc online tip Multiplayer online battle arena (MOBA), dezvoltat şi comercializat de către <a href="https://www.riotgames.com/ro">Riot Games</a> pentru Microsoft Windows şi MAC OS. În 2012 Forbes a numit League of Legends ca "cel mai jucat joc pe calculator din America de Nord şi Europa din punct de vedere al orelor petrecute în joc." În Ianuarie 2014 peste 67 de milioane de persoane au jucat League of Legends, 27 de milioane într-o singură zi, şi 7.5 milioane de jucători au fost conectaţi în acelaşi timp.</p>
+	<p>Jucătorii de League of Legends, au numele de "invocatori" controlând un singur caracter (numit campion), au abilităţi unice şi alături de echipa lor trebuie să distrugă nexus-ul echipei adverse. Fiecare joc de League of Legends este unic, toţi campionii încep destul de slabi, progresând în timp, acumulând aur şi experienţă în timpul jocului.</p>
+<p>	League of Legends a generat o comunitatea competitivă activă care este în continuă creştere. În Europa şi în America de Nord, Riot Games organiează League of Legends Championship Series, care constă în întrecerea a 8 echipe profesioniste de pe fiecare continent. Competiţii regionale asemănătoare există în: China, Coreea, Taiwan şi Asia de Sud Est. Aceste compleţii regionale au apogeul la anualul Campionat Mondial de League of Legends, care în 2013 a avut un premiu de 1 milion de dolari şi a atras peste 33 de milioane de vizitatori online.</p>
+<blockquote>
+  <h2>Gameplay</h2>
+</blockquote>
+	<p>Prima şi cea mai populară hartă dintre Câmpiile Dreptăţii ("Fields of Justice"), Riftul invocatorului ("Summoner's Rift") este considerată etalonul competiţiei din League of Legends. Acţiunea se împarte de obicei în faze distincte, începând cu dueluri între adversarii de pe culoare şi culminând cu lupte de echipă de dimensiuni legendare. Riftul Invocatorului este asimetric pe diagonală şi are trei culoare către baza inamică. Fiecare culoar este apărat de trei turnuri şi un inhibitor, în timp ce nexusul este apărat de doua turnuri.</p>
+	<blockquote>
+  <h2>E-Sports</h2>
+</blockquote>
+	<p>În 2013, League Of Legends era cel mai popular sport electronic din Coreea de Sud.</p>
+	<p>De pe 11 iulie 2013, Serviciul de Imigrări ale Statelor Unite ale Americii recunoaşte jucătorii profesionişti de League of Legends ca atleţi, drept urmare documentele pentru obţinerea vizei au fost simplificate pentru ei. Aceste schimbări le permit jucătorilor profesionişti de League of Legends să locuiască in Statele Unite ale Americii până la 5 ani.</p>
+	<blockquote><h2><a href="https://www.op.gg/summoners/eune/PinkuTRO">CONTUL MEU DE LOL</a></h2></blockquote>
+</div>
+</body>
+</html>
+

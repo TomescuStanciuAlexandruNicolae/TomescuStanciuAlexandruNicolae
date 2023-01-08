@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<title>Valorant</title>
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FF0004;
+}
+	ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+		.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body bgcolor="#2dd39a">
+
+<ul>	<li style="float:right; margin-right: 10px "><h1 id="ceas" style="font-size:12px">
+		<script>
+			function afiseaza(){
+				thelement=document.getElementById("ceas");
+				var numezi=["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+				var numeluna=["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+				var Digital=new Date();
+				var zi=Digital.getDay();
+				var nrzi=Digital.getDate();
+				var luna=Digital.getMonth();
+				var an=Digital.getFullYear();
+				var hours=Digital.getHours();
+				var minutes=Digital.getMinutes();
+				var seconds=Digital.getSeconds();
+				var dn="PM";
+				if (hours<12) dn="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var ctime=numezi[zi]+" "+nrzi+" "+numeluna[luna]+" "+an+"<br />"+hours+":"+minutes+":"+seconds+" "+dn
+				thelement.innerHTML="<b style='font-size:14;color:white;'>"+ctime+"</b>";
+				setTimeout("afiseaza()",1000);
+			}
+			window.onload=afiseaza;
+			//-->
+</script></h1>	</li>
+	<li><a  href="hobby.html">Hobby-urile mele</a></li>
+  <li><a class="active" href="jv.html">Jocuri video</a></li>
+  <li><a href="anime.html">Anime</a></li><li>
+	<a href="airsoft.html">Airsoft</a></li>
+	<li><a href="surse.html">Surse</a></li>
+	
+</ul>
+
+<div style="padding:20px;margin-top:30px;">
+  <img src="media/valologo.png" width="200" height="130" alt="Valorant" title="VALORANT" class="center">
+<p><strong>Valorant</strong> este un shooter free-to-play (<a href="https://playvalorant.com/en-us">Download Valorant</a>) dezvoltat și publicat de 
+	 <a href="https://www.riotgames.com/ro">Riot Games</a>, pentru Microsoft Windows. Dezvăluit pentru prima oară sub numele de cod Project A în octombrie 2019, jocul a început o perioada beta cu acces limitat pe 7 aprilie 2020, urmată de o lansare oficială pe 2 iunie 2020. Dezvoltarea jocului a început în 2014.</p>
+	<p>Jocul fost anunțat pe 1 martie 2020, cu un videoclip pe YouTube numit „The Round” ("Runda"). Betaul cu acces restrâns fost lansat pe 7 aprilie 2020. Pentru a avea șansa de a obține o cheie de acces beta, jucătorii au fost nevoiți să se înscrie cu un cont de Riot Games, cât și cu platforma de streaming Twitch și să urmărească canale relevante de pe platforma. Această versiune beta s-a încheiat pe 28 mai 2020, jocul fiind lansat complet pe 2 iunie 2020.</p>
+	<blockquote><h2><a href="https://tracker.gg/valorant/profile/riot/PinKu%20KinGG%23NGF/overview">CONTUL MEU DE VALORANT</a></h2></blockquote>
+	<blockquote><h1><a href="clipurivalorant.html">Clipuri valorant proprii</a></h1></blockquote>
+</div>
+</body>
+</html>
+

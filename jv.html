@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<title>Jocuri video</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FF0004;
+}
+	ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body bgcolor="#00F3FF">
+
+<ul>
+	<li style="float:right; margin-right: 10px "><h1 id="ceas" style="font-size:12px">
+  <script>
+			function afiseaza(){
+				thelement=document.getElementById("ceas");
+				var numezi=["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+				var numeluna=["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+				var Digital=new Date();
+				var zi=Digital.getDay();
+				var nrzi=Digital.getDate();
+				var luna=Digital.getMonth();
+				var an=Digital.getFullYear();
+				var hours=Digital.getHours();
+				var minutes=Digital.getMinutes();
+				var seconds=Digital.getSeconds();
+				var dn="PM";
+				if (hours<12) dn="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var ctime=numezi[zi]+" "+nrzi+" "+numeluna[luna]+" "+an+"<br />"+hours+":"+minutes+":"+seconds+" "+dn
+				thelement.innerHTML="<b style='font-size:14;color:white;'>"+ctime+"</b>";
+				setTimeout("afiseaza()",1000);
+			}
+			window.onload=afiseaza;
+			//-->
+</script></h1>	</li>
+  <li><a href="hobby.html">Hobby-urile mele</a></li>
+  <li><a class="active" href="jv.html">Jocuri video</a></li>
+  <li><a href="anime.html">Anime</a></li>
+  <li><a href="airsoft.html">Airsoft</a></li>
+  <li><a href="surse.html">Surse</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;">
+  <h1 style="text-align:center;">Jocuri video</h1>
+	<p>Un <strong>joc video</strong> este un <strong>joc electronic</strong> în care se interacționează cu o interfață grafică pentru a genera răspuns vizual pe un ecran. Jocurile video în general au un sistem de recompensare a utilizatorului, de obicei se ține scorul, acest sistem depinzând de îndeplinirea unor anumite obiective în joc. În anul 2008, piața mondială de jocuri video a înregistrat o valoare de 41,9 miliarde de dolari iar în 2011 a ajuns la 56 miliarde dolari. Pentru anul 2015, piața este estimată să crească la 82 miliarde dolari.</p>
+	<blockquote>
+	  <h2>Platforme</h2>
+  </blockquote>
+	<p>Termenul <strong>joc pe calculator</strong> sau "joc pe PC" se referă la un joc care este jucat pe un PC, unde monitorul este principalul mijloc de feedback și care folosește ca dispozitiv de control un periferic de intrare, de obicei butonarea unui joystick (jocuri din arcade-uri), o combinație tastatură & maus/trackball sau un controller, ori o combinație dintre cele de mai sus. Jocuri pe calculator sunt denumite și jocurile în mod text sau jocuri care folosesc și alte metode care includ sunetul sau vibrația ca principalul mijloc de feedback, dar in momentul actual apar prea puține jocuri noi care intră în aceste categorii.</p>
+<p>Termenul "Joc pentru consolă" se referă la un joc care este jucat pe un sistem conceput special pentru aceasta, sistem care poate fi conectat la un televizor sau la un monitor. Denumirea de "joc video" poate fi folosită și pentru a descrie software făcut și pentru alte dispozitive: telefoanele mobile, PDA, calculatoare științifice performante, ceasuri electronice, camere video digitale, aparate foto digitale, MP3 playere.</p>
+<blockquote>
+  <h2>Genuri de jocuri</h2>
+</blockquote>
+<p>Jocurile au fost întotdeauna mai ușor de clasificat după genul lor, din cauza constrângerilor tehnice a diferitelor platforme, cum ar fi cele legate de spațiul alocat jocurilor. Odată cu trecerea anilor și creșterea banilor destinați producției jocurilor video, valoarea comercială a crescut iar cererea de talent creativ a obligat companiile să aducă artiști din afara industrei de specialitate. Refolosirea unor anumite genuri este cel mai bine observată în încercarea de a stabili "francize", care de obicei folosesc aceleași caractere, situații, conflicte și teme de-a lungul continuărilor.</p>
+<p>Există și combinații de genuri de jocuri mai sociale, cum ar fi jocurile de genul Massively multiplayer online role-playing game (MMORPG).</p>
+ <h3>Cateva din jocurile pe care le joc sunt:</h3>
+	 <h4><li></li><a  href="valorant.html">Valorant</a></h4>
+	<h4><li></li><a href="lol.html">League of legends</a></h4>
+</div>	
+	
+	</body>
+</html>

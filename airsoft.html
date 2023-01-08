@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<title>Airsoft</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FF0004;
+}
+	ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body bgcolor="#2B350E">
+
+<ul>	<li style="float:right; margin-right: 10px "><h1 id="ceas" style="font-size:12px">
+		<script>
+			function afiseaza(){
+				thelement=document.getElementById("ceas");
+				var numezi=["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+				var numeluna=["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+				var Digital=new Date();
+				var zi=Digital.getDay();
+				var nrzi=Digital.getDate();
+				var luna=Digital.getMonth();
+				var an=Digital.getFullYear();
+				var hours=Digital.getHours();
+				var minutes=Digital.getMinutes();
+				var seconds=Digital.getSeconds();
+				var dn="PM";
+				if (hours<12) dn="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var ctime=numezi[zi]+" "+nrzi+" "+numeluna[luna]+" "+an+"<br />"+hours+":"+minutes+":"+seconds+" "+dn
+				thelement.innerHTML="<b style='font-size:14;color:white;'>"+ctime+"</b>";
+				setTimeout("afiseaza()",1000);
+			}
+			window.onload=afiseaza;
+			//-->
+</script></h1>	</li>
+	<li><a href="hobby.html">Hobby-urile mele</a></li>
+  <li><a href="jv.html">Jocuri video</a></li>
+  <li><a href="anime.html">Anime</a></li><li>
+	<a class="active" href="airsoft.html">Airsoft</a></li>
+	<li><a href="surse.html">Surse</a></li>
+	
+</ul>
+
+<div style="padding:20px;margin-top:30px;">
+  <h1 style align="center">Airsoft</h1>
+<p><strong>Airsoft</strong> este un joc sportiv în care jucătorii simulează un conflict sau efectuează anumite misiuni, cu ajutorul unor replici ale armelor reale ce lansează proiectile sferice non-metalice, utilizând echipamente specifice și tactici militare reale.</p>
+	<p>La jocul de Airsoft se folosesc bile din material plastic ca muniție, având o masă între 0,2 g și 0,62 g. 
+</p>
+<p>Pentru mulți jucători, airsoft-ul reprezintă mai mult decât un hobby; este o dorință de aventură, manifestată într-un joc ce nu cunoaște limite în materie de arme airsoft și scenarii cu tentă militară.</p>
+
+<p>Înainte de joc, viteza de tragere al unui pistol airsoft este de obicei verificată printr-un cronograf. Puterea unei replici AirSoft est măsurată în metrii pe secundă (MPS) sau Joule, o unitate de măsura a energiei. În unele țări replicile de airsoft au o viteză setată sau o restricție energetică a bilei de tragere; armele care trag peste viteza legală pot fi confiscate. Unele terenuri de joc restricționează și mai mult distanțele minime de angajare, impunând jucătorilor să strige "Bang Bang!" sau o altă frază în loc să împuște alți jucători la distanțe apropiate. Acest lucru se face pentru a preveni posibilele leziu</p>
+<blockquote>
+  <h2>Istorie</h2>
+</blockquote>
+<p>Airsoft-ul îi are originea la sfârșitul anilor ’50 în Asia de Est, în special Japonia, acolo unde armele de foc erau foarte dificil sau chiar imposibil de obținut, din cauza legilor locale; de aceea, armele de airsoft au apărut ca alternativă legală a celor reale. Jocul este însă foarte popular în această zonă, iar marii producători de echipamente vin tot din aceste țări. Jocul s-a dezvoltat treptat la începutul anilor ’70 în S.U.A., ca o alternativă la paintball și la armele care foloseau vopsea pentru astfel de activități. </p>
+<blockquote>
+  <h2>Descriere generală</h2>
+</blockquote>
+	<p>Replicile de airsoft sunt, de obicei, copii fidele ale modelelor de arme reale (AK, M4, MP7, Glock, etc.), de unde și denumirea de ”replică de airsoft”. După sistemul de propulsie al proiectilelor, există 3 mari categorii de replicit de airsoft:</p>
+	<ol><li>replici cu propulsie electrică la care un motor electric pune în mișcare un piston cu arc (AEG sau Automatic Electric Gun);</li>
+		<br/><audio controls>
+  <source src="audio/electric.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+	<br/><li>replici pe bază de gaz (CO2 sau alt tip de gaz comprimat);</li>
+		<br/><audio controls>
+  <source src="audio/gas.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+	<br/><li>replici cu acționare manuală la care un piston cu arc este tensionat manual de către utilizator (Springers sau Bolt Action).</li>
+		<br/><audio controls>
+  <source src="audio/spring.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+	</ol>
+	<p>Muniția replicilor de airsoft este reprezentată de bile non-metalice din plastic ABS, in general, dar mai pot fi și din material biodegradabil, teflon, sticlă, cu vopsea, explozive, etc. Cele mai comun folosite bile de airsoft au diamentrul de 6 mm (ocazional de 8 mm) și cântăresc între 0,12 g și 0,43 g. Vitezele cu care circulă proiectilele pornesc de la 50-60 m/s (aprox. 180 km/h) și sunt limitate de regulamente, în general, până la 175-180 m/s (648 km/h), dar putem întâlni și replici care depășesc cu mult această viteză. Se foloseste în practică foarte des ca unitate de măsură pentru viteza proiectilului fps ("picioare/secundă"), existând următoarea relație între cele două unități de măsură: 1 fps = 0,3048 m/s.</p>
+	<p>Distanța de angajare stadard a replicilor de airsoft este între 40-70 m (există unii jucători care susțin că au atins ținte și la distanțe de aprox. 140 m). Spre comparație, o armă reală AK-47 are o distanță maximă de angajare de 200-300 m pe foc automat. Pe lângă sistemul de propulsie, un rol foarte important în creșterea distanței de angajare a proiectilelor de airsoft îl are camera de Hop-UP (High Operation Power UP). Camera de Hop-UP conține o perdeluță de cauciuc care pătrunde în partea din spate a țevii interioare a replicii și agăță proiectilele în timp ce sunt propulsate, conferindu-le un efect de rotație invers sensului de deplasare (backspin). Această rotație creează în timpul zborului proiectilului o zonă de presiune scăzută deasupra bile (efectul Magnus), contribuind la o portanță mai mare a proiectilului (rază de acțiune mai mare) și o precizie îmbunătățită.</p>
+	<p>Similar armelor reale cu glonț și replicile airsoft dezvoltă o anumită putere (energie) la momentul ieșirii proiectilului din replică, putere măsurată în Jouli. În calculul puterii dezvoltate de replică se ține cont de viteza de ieșire a proiectilului din replică și de greutatea acestuia. În general, această putere pleacă de la 0,3 Jouli (la unele pistoale airsoft cu arc) și ajunge până la 3,5 Jouli (la unele replici airsoft de tip lunetist sau pistoale cu propulsie bazată pe butelii CO2), dar există și excepții, unde energia poate depăși această valoare. În funcție de energia dezvoltate de replică această se încadrează într-o anumită clasă și i se impune o anumită distanță minimă de angajare (MED – minimum engagement distance) necesară protejării jucătorilor împotriva accidentărilor pe terenul de airsoft.</p>
+	<p>Airsoft-ul este un sport care se bazează, în mare măsură, pe onoare și respect între jucători. Având în vedere că, în general, la impact nu rămân semne vizibile pe jucătorul lovit, desfășurarea în bune condiții a jocului depinde integral de abilitatea jucătorilor de a recunoaște orice lovitură primită și de a se declara ”morți”. Prin urmare, putem spune că airsoft-ul este: un sport nobil, un sport al gentilomilor, un sport al oamenilor cu caracter.</p>
+	<p>Istoric vorbind, airsoft-ul își trage rădăcinile din Japonia anilor 70. În Japonia, deținerea armelor de foc a fost interzisă anii 60, și ca răspuns la aceste interdicții japonezii au început să producă replicii non-metalice de colecție, extrem de realiste, ale armelor de foc militare. Ulterior, a fost introdus un sistem de propulsie asemănător cu cel folosit la pistoalele de tir. Așa au apărut replicile perfecte, non-letale, ale armelor de foc reale. Mai apoi, au devenit populare pe piețele asiatice sub denumirea de arme ”soft-air” sau ”air-soft”. Replicile propulsate pe gaz au evoluat, spre mijlocul anilor 90, în modele electrice (AEG), mai ieftine, și mai apoi, au fost dezvoltate și sistemele, din ce în ce mai performante, pentru acuratețea și portanța proiectilului.</p>
+	<p>Jocurile de airsoft variază foarte mult în scenariu și în modul de aplicare, depinzând de locație, de numărul participanților și de posibilitățile economice; dar, în general, variază de la jocuri mici, tip ciocniri, la simulări militare complexe până la reconstituiri istorice. La aceste evenimente, jucătorii deseori asezonează replicile de airsoft cu echipament real și tactici militare similare sau identice cu cele folosite de forțele armate.</p>
+	<p>Moduri de joc: CQB, WOODLAND, URBAN.</p>
+	<li>CQB (Close Quarters Battle). Se joacă în interiorul clădirilor, cu replici a căror putere să fie limitată, deoarece se joacă la distanțe mici.</li>
+	<br/><li>"Woodland" necesită minimum 20 participanți; se joacă în spații deschise – păduri, munți, câmpuri, dealuri – cu aplicarea strategiilor militare.</li>
+	<br/><li>"Urban" este un amestec de CQB cu "woodland". Număr de participanți mare; se joacă în interiorul și exteriorul clădirilor.</li>
+	<br/><p>Odată cu răspândirea internetului, popularitea airsoft-ului a cunoscut o creștere ”alarmantă”, atât în Europa, cât și în America. Evenimente de anvergură majoră sunt organizate periodic în Europa ("Berget") și în Statele Unite ("Irene"), evenimente ce strâng la start mii de jucători de airsoft. Actualmente, airsoft-ul este practicat de sute de mii de jucători la nivel mondial și, cu siguranță, se va bucura de un viitor prosper.</p>
+	<h2 title="site arena fysnow"><a href="https://fysnow.ro">Hai la airsoft!</a></h2>
+</div>
+</body>
+</html>
+
