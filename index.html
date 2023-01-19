@@ -12,8 +12,97 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;<!DOCTYPE html>
+<html>
+	<title>Indexu' sefule</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+<style>
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
   position: fixed;
   top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #FF0004;
+}
+	ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</style>
+</head>
+<body bgcolor="#D3D3D3">
+
+<ul>	<li style="float:right; margin-right: 10px "><h1 id="ceas" style="font-size:12px">
+		<script>
+			function afiseaza(){
+				thelement=document.getElementById("ceas");
+				var numezi=["Duminica", "Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata"];
+				var numeluna=["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"];
+				var Digital=new Date();
+				var zi=Digital.getDay();
+				var nrzi=Digital.getDate();
+				var luna=Digital.getMonth();
+				var an=Digital.getFullYear();
+				var hours=Digital.getHours();
+				var minutes=Digital.getMinutes();
+				var seconds=Digital.getSeconds();
+				var dn="PM";
+				if (hours<12) dn="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var ctime=numezi[zi]+" "+nrzi+" "+numeluna[luna]+" "+an+"<br />"+hours+":"+minutes+":"+seconds+" "+dn
+				thelement.innerHTML="<b style='font-size:14;color:white;'>"+ctime+"</b>";
+				setTimeout("afiseaza()",1000);
+			}
+			window.onload=afiseaza;
+			//-->
+</script></h1>	</li>
+	<li><a href="hobby.html">Hobby-urile mele</a></li>
+  <li><a href="jv.html">Jocuri video</a></li>
+  <li><a href="anime.html">Anime</a></li><li>
+	<a href="airsoft.html">Airsoft</a></li>
+	<li><a href="surse.html">Surse</a></li>
+	
+</ul>
+
+<div style="padding:20px;margin-top:30px;">
+  <h1>Index "Hobby-urile mele"</h1>
+ 
+</div>
+
+</body>
+</html>
+
+
   width: 100%;
 }
 
